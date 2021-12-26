@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+td, tr{
+    border: 1px solid black;
+    padding: 2rem;
+}
+#bg-modal{
+    visibility:hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#actualForm{
+    background: white;
+    padding:2rem 5rem;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 3rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <button onclick="showPopupForm()">ADD NEW BOOK</button>
+    <div id="bg-modal">
+        <div id="actualForm">
+            <div  id="crossCloseWindow" class="close">+</div>
+            <h2>Add a new book</h2>
+            <p>Title: <input type="text" id="titleOfBook"></p>
+            <p>Author: <input type="text" id="authorOfBook"></p>
+            <p>Pages: <input type="number" id="pagesOfBook"></p>
+            <p>Did you read the book?: <input type="radio" checked value="true" name="questionAlreadyReadBook">Yes <input value="false" type="radio" name="questionAlreadyReadBook"> No</p>
+            <button onclick="createBookObject()">ADD BOOK</button>
+        </div>
+    </div>
+    <table id="tableLibrary">
+        <tr id="hello">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+</body>
+<script src="./js/script.js"></script>
+</html>
